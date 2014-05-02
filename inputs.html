@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <script type="text/javascript" src=""></script>
 </head>
 <body>
-    <form>
+    <form method="GET" action="http://daniel.com/handleform.php">
         <h3>input, type: text</h3>
         <input type="text" name="textname" id="textid" class="inputs textInput">
         <h3>input, type: password</h3>
@@ -23,6 +24,18 @@
                 <input type="radio" name="channel"> onion
             </fieldset>
         </span>
+
+        <span>
+            <fieldset>
+                <legend>produce options</legend>
+                <input type="radio" name="produce"> apple
+                <input type="radio" name="produce"> orange
+                <input type="radio" name="produce"> tomato
+                <input type="radio" name="produce"> zuccini
+                <input type="radio" name="produce"> onion
+            </fieldset>
+        </span>
+
         <h3>input, type: submit</h3>
         <input type="submit">Submit!</input>
         <h3>select with options and option groups</h3>
@@ -36,9 +49,16 @@
             </optgroup>
         </select>
         <h3>textarea:</h3>
-        <textarea rows="5" cols="50">
+        <textarea rows="5" cols="5">
             some starter text
         </textarea>
+        <fieldset>
+            <legend>Playground</legend>
+            <button></button>
+        </fieldset>
+
     </form>
+
+
 </body>
 </html>
