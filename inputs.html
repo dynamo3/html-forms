@@ -6,7 +6,7 @@
     <script type="text/javascript" src=""></script>
 </head>
 <body>
-    <form method="GET" action="http://daniel.com/handleform.php">
+    <form method="POST" action="https://daniel.com/handleform.php">
         <h3>input, type: text</h3>
         <input type="text" name="textname" id="textid" class="inputs textInput">
         <h3>input, type: password</h3>
@@ -54,7 +54,8 @@
         </textarea>
         <fieldset>
             <legend>Playground</legend>
-            <button></button>
+            <button id="playbutton">Do Something</button>
+            <!-- you could hook a javascript function to this button so that you could inspect or otherwise modify the inputs -->
         </fieldset>
 
     </form>
